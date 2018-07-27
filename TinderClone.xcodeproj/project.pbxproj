@@ -13,6 +13,7 @@
 		E3A5DF8A210B85A800E5AC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A5DF88210B85A800E5AC68 /* Main.storyboard */; };
 		E3A5DF8C210B85AA00E5AC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A5DF8B210B85AA00E5AC68 /* Assets.xcassets */; };
 		E3A5DF8F210B85AA00E5AC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A5DF8D210B85AA00E5AC68 /* LaunchScreen.storyboard */; };
+		E3A5DF97210B996E00E5AC68 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A5DF96210B996E00E5AC68 /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E3A5DF8B210B85AA00E5AC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A5DF8E210B85AA00E5AC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A5DF90210B85AA00E5AC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A5DF96210B996E00E5AC68 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				E3A5DF84210B85A800E5AC68 /* AppDelegate.swift */,
 				E3A5DF86210B85A800E5AC68 /* ViewController.swift */,
 				E3A5DF88210B85A800E5AC68 /* Main.storyboard */,
+				E3A5DF96210B996E00E5AC68 /* loginViewController.swift */,
 				E3A5DF8B210B85AA00E5AC68 /* Assets.xcassets */,
 				E3A5DF8D210B85AA00E5AC68 /* LaunchScreen.storyboard */,
 				E3A5DF90210B85AA00E5AC68 /* Info.plist */,
@@ -204,6 +207,7 @@
 			files = (
 				E3A5DF87210B85A800E5AC68 /* ViewController.swift in Sources */,
 				E3A5DF85210B85A800E5AC68 /* AppDelegate.swift in Sources */,
+				E3A5DF97210B996E00E5AC68 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
