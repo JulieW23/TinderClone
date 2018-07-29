@@ -19,27 +19,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x38-nG-tcw">
-                                <rect key="frame" x="37" y="183.5" width="300" height="300"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-YR-lmg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="hls-7x-4TH">
+                                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="PL1-5L-oC9">
+                                            <connections>
+                                                <action selector="logout:" destination="BYZ-38-t0r" id="e7n-so-HDg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Profile" id="b0A-Jb-yyf">
+                                            <connections>
+                                                <action selector="viewOwnProfile:" destination="BYZ-38-t0r" id="K5J-br-8gz"/>
+                                                <segue destination="04q-IM-BXi" kind="presentation" identifier="viewOwnProfileSegue" id="XPP-dy-XHZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-bJ-ajD">
+                                <rect key="frame" x="50" y="195.5" width="275" height="275"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="2LW-qb-O1S"/>
-                                    <constraint firstAttribute="height" constant="300" id="KSf-vY-aJa"/>
+                                    <constraint firstAttribute="width" secondItem="lcy-bJ-ajD" secondAttribute="height" multiplier="1:1" id="xh9-jG-8z0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="x38-nG-tcw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1c7-o4-JwS"/>
-                            <constraint firstItem="x38-nG-tcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="blO-t8-Q00"/>
+                            <constraint firstItem="lcy-bJ-ajD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gSJ-Sj-AoZ"/>
+                            <constraint firstItem="lcy-bJ-ajD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gWF-bA-r6a"/>
+                            <constraint firstItem="lcy-bJ-ajD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="l8M-sx-5it"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lcy-bJ-ajD" secondAttribute="trailing" constant="50" id="qnv-sd-quK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="swipeLabel" destination="x38-nG-tcw" id="r5C-f9-Og4"/>
+                        <outlet property="matchImageView" destination="lcy-bJ-ajD" id="PYD-5Z-W9M"/>
+                        <segue destination="udp-sT-G9S" kind="presentation" identifier="logoutSegue" id="4Nn-gK-aFF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwx-My-9T4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="32"/>
+            <point key="canvasLocation" x="423" y="516"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="pf6-dU-KaE">
@@ -233,6 +250,7 @@
                         <outlet property="passwordTextField" destination="3wG-c6-czd" id="fU8-y5-kJw"/>
                         <outlet property="usernameTextField" destination="gbk-iV-lMK" id="SOg-os-BWb"/>
                         <segue destination="04q-IM-BXi" kind="presentation" identifier="updateSegue" id="7JN-9R-UU4"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginToSwipingSegue" id="uNC-fN-fPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZE-TH-1Tz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -243,4 +261,8 @@
     <resources>
         <image name="user" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XPP-dy-XHZ"/>
+        <segue reference="ozv-94-FK3"/>
+    </inferredMetricsTieBreakers>
 </document>

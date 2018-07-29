@@ -65,6 +65,7 @@ class updateViewController: UIViewController, UINavigationControllerDelegate, UI
                         }
                         else {
                             print("update successful")
+                            self.performSegue(withIdentifier: "updateToSwipeSegue", sender: nil)
                         }
                     })
                 }
@@ -95,7 +96,7 @@ class updateViewController: UIViewController, UINavigationControllerDelegate, UI
         self.genderInterestPicker.delegate = self
         self.genderInterestPicker.dataSource = self
         genderPickerData = ["", "Man", "Woman", "Other"]
-        genderInterestPickerData = ["", "Men", "Women", "Other", "Everybody"]
+        genderInterestPickerData = ["", "Man", "Woman", "Other", "Everybody"]
         
         if let gender = PFUser.current()?["gender"] as? String {
             if let index1 = genderPickerData.index(of: gender) {
@@ -110,7 +111,7 @@ class updateViewController: UIViewController, UINavigationControllerDelegate, UI
             }
         }
         displayPhotoWhenLoggedIn()
-        createWomen()
+//        createWomen()
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

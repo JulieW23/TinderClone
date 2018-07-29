@@ -55,7 +55,11 @@ class loginViewController: UIViewController {
                     self.errorLabel.text = errorMessage
                 } else {
                     print("Login sucessful")
-                    self.performSegue(withIdentifier: "updateSegue", sender: nil)
+                    if user?["gender"] != nil {
+                        self.performSegue(withIdentifier: "loginToSwipingSegue", sender: nil)
+                    } else {
+                        self.performSegue(withIdentifier: "updateSegue", sender: nil)
+                    }
                 }
             }
         }
@@ -63,7 +67,11 @@ class loginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if PFUser.current() != nil {
-            self.performSegue(withIdentifier: "updateSegue", sender: nil)
+            if PFUser.current()?["gender"] != nil {
+                self.performSegue(withIdentifier: "loginToSwipingSegue", sender: nil)
+            } else {
+                self.performSegue(withIdentifier: "updateSegue", sender: nil)
+            }
         }
     }
     
