@@ -3,6 +3,8 @@
 ## Description
 A basic clone of Tinder created using Swift with back end data stored on Parse Platform.
 
+Other Swift practice project: [PhotoSharing](https://github.com/JulieW23/PhotoSharing)
+
 ## Functionality
 * Signup/Login
 * Upload profile information
