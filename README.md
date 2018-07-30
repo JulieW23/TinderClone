@@ -21,3 +21,14 @@ A basic clone of Tinder created using Swift with back end data stored on Parse P
 3. Run on simulator or plugged in iOS 11+ Device
 
 ## Screenshots:
+<div>
+<img src="https://github.com/JulieW23/TinderClone/blob/master/screenshots/screenshotlogin.png" width="25%">
+<img src="https://github.com/JulieW23/TinderClone/blob/master/screenshots/screenshotprofile.png" width="25%">
+<img src="https://github.com/JulieW23/TinderClone/blob/master/screenshots/screenshotmessages.png" width="25%">
+</div>
+<br />
+<div>
+<img src="https://github.com/JulieW23/TinderClone/blob/master/screenshots/screenshotbrowse.png" width="25%">
+<img src="https://github.com/JulieW23/TinderClone/blob/master/screenshots/screenshotswipingleft.png" width="25%">
+<img src="https://github.com/JulieW23/TinderClone/blob/master/screenshots/screenshotswipingright.png" width="25%">
+</div>
