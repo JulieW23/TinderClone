@@ -29,6 +29,12 @@ class ViewController: UIViewController {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(wasDragged(gestureRecognizer:)))
         matchImageView.addGestureRecognizer(gesture)
         updateImage()
+        PFGeoPoint.geoPointForCurrentLocation { (geoPoint, error) in
+            if let point = geoPoint {
+                PFUser.current()?["location"] = point
+                PFUser.current()?.saveInBackground()
+            }
+        }
     }
     
     // respond when swipeLabel is dragged
@@ -88,6 +94,12 @@ class ViewController: UIViewController {
                 ignoredUsers += rejectedUsers
             }
             query.whereKey("objectId", notContainedIn: ignoredUsers)
+            if let geoPoint = PFUser.current()?["location"] as? PFGeoPoint {
+                query.whereKey("location", withinGeoBoxFromSouthwest: PFGeoPoint(latitude: geoPoint.latitude - 1, longitude: geoPoint.longitude - 1), toNortheast: PFGeoPoint(latitude: geoPoint.latitude + 1, longitude: geoPoint.longitude + 1))
+            }
+            if let currentUserId = PFUser.current()?.objectId {
+                query.whereKey("objectId", notEqualTo: currentUserId)
+            }
             query.limit = 1
             query.findObjectsInBackground { (objects, error) in
                 if let users = objects {

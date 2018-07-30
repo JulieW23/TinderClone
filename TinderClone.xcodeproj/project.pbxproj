@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A8667D04B09877DA67BA44F4 /* Pods_TinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C726FF047F8EE6DC93ECDA24 /* Pods_TinderClone.framework */; };
+		E386758E210E5B2F00BB6721 /* matchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386758D210E5B2F00BB6721 /* matchesViewController.swift */; };
+		E3867590210E625B00BB6721 /* matchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386758F210E625B00BB6721 /* matchTableViewCell.swift */; };
 		E3A5DF85210B85A800E5AC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A5DF84210B85A800E5AC68 /* AppDelegate.swift */; };
 		E3A5DF87210B85A800E5AC68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A5DF86210B85A800E5AC68 /* ViewController.swift */; };
 		E3A5DF8A210B85A800E5AC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A5DF88210B85A800E5AC68 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		1E901AF2A444CE6F89B3AFF1 /* Pods-TinderClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderClone/Pods-TinderClone.release.xcconfig"; sourceTree = "<group>"; };
 		270DEF6E4772B5A01F08C4DA /* Pods-TinderClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderClone/Pods-TinderClone.debug.xcconfig"; sourceTree = "<group>"; };
 		C726FF047F8EE6DC93ECDA24 /* Pods_TinderClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E386758D210E5B2F00BB6721 /* matchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchesViewController.swift; sourceTree = "<group>"; };
+		E386758F210E625B00BB6721 /* matchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchTableViewCell.swift; sourceTree = "<group>"; };
 		E3A5DF81210B85A800E5AC68 /* TinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A5DF84210B85A800E5AC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A5DF86210B85A800E5AC68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				E3A5DF84210B85A800E5AC68 /* AppDelegate.swift */,
 				E3A5DF86210B85A800E5AC68 /* ViewController.swift */,
 				E3A5DF88210B85A800E5AC68 /* Main.storyboard */,
+				E386758F210E625B00BB6721 /* matchTableViewCell.swift */,
+				E386758D210E5B2F00BB6721 /* matchesViewController.swift */,
 				E3E0D371210CD31400335CDB /* updateViewController.swift */,
 				E3A5DF96210B996E00E5AC68 /* loginViewController.swift */,
 				E3A5DF8B210B85AA00E5AC68 /* Assets.xcassets */,
@@ -211,6 +217,8 @@
 				E3A5DF87210B85A800E5AC68 /* ViewController.swift in Sources */,
 				E3A5DF85210B85A800E5AC68 /* AppDelegate.swift in Sources */,
 				E3A5DF97210B996E00E5AC68 /* loginViewController.swift in Sources */,
+				E3867590210E625B00BB6721 /* matchTableViewCell.swift in Sources */,
+				E386758E210E5B2F00BB6721 /* matchesViewController.swift in Sources */,
 				E3E0D372210CD31400335CDB /* updateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
